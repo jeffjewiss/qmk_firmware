@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |   `  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |-------.    ,-------|      | Left | Up   | Down |Right |      |
+ * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |-------.    ,-------| Left | Down | Up   | Right|      |      |
  * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
  * |  F7  |  F8  |  F9  | F10  | F11  | F12  |-------|    |-------|   +  |   -  |   =  |   [  |   ]  |   \  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_RAISE] = LAYOUT(
   _______, _______, _______, _______, _______, _______,                     _______, _______, _______, _______, _______, _______,
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-  KC_F1,  KC_F2,    MT(MOD_LCTL, KC_F3),   MT(MOD_LALT, KC_F4),   MT(MOD_LGUI, KC_F5),   KC_F6,                       _______, MT(MOD_RGUI, KC_LEFT), MT(MOD_RALT, KC_UP), MT(MOD_RCTL, KC_DOWN),   KC_RGHT, XXXXXXX,
+  KC_F1,  KC_F2,    MT(MOD_LCTL, KC_F3),   MT(MOD_LALT, KC_F4),   MT(MOD_LGUI, KC_F5),   KC_F6,                       KC_LEFT, MT(MOD_RGUI, KC_DOWN), MT(MOD_RALT, KC_UP), MT(MOD_RCTL, KC_RGHT),   XXXXXXX, XXXXXXX,
   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,   _______, _______,  KC_PLUS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS,
                              _______, _______, _______,  KC_ENTER, _______,  _______, _______, TG(_RAISE)
 ),
